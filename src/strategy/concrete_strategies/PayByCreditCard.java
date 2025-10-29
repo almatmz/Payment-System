@@ -3,8 +3,8 @@ package strategy.concrete_strategies;
 import strategy.PaymentStrategy;
 
 public class PayByCreditCard implements PaymentStrategy {
-    private String cardNumber;
-    private String cardOwner;
+    private final String cardNumber;
+    private final String cardOwner;
     public PayByCreditCard(String cardNumber, String cardOwner) {
         this.cardNumber = cardNumber;
         this.cardOwner = cardOwner;

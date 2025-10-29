@@ -1,10 +1,10 @@
 package strategy;
 
 public class Order {
-    private double totalAmount;
+    private final float totalAmount;
     private PaymentStrategy paymentStrategy;
 
-    public Order(double totalAmount) {
+    public Order(float totalAmount) {
         this.totalAmount = totalAmount;
     }
 

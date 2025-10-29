@@ -3,7 +3,7 @@ package strategy.concrete_strategies;
 import strategy.PaymentStrategy;
 
 public class PayByApp implements PaymentStrategy {
-    private String email;
+    private final String email;
 
     public PayByApp(String email) {
         this.email = email;

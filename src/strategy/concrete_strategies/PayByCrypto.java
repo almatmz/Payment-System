@@ -3,7 +3,7 @@ package strategy.concrete_strategies;
 import strategy.PaymentStrategy;
 
 public class PayByCrypto implements PaymentStrategy {
-    private String walletAddress;
+    private final String walletAddress;
 
     public PayByCrypto(String walletAddress) {
         this.walletAddress = walletAddress;
