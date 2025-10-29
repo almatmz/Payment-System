@@ -21,7 +21,4 @@ public class Order {
         System.out.println("Order completed successfully.");
     }
 
-    public double getTotalAmount() {
-        return totalAmount;
-    }
 }

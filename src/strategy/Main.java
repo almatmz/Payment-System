@@ -7,8 +7,8 @@ public class Main {
     public static void main(String[] args) {
         Order order = new Order(1490);
 
-        PaymentStrategy paypal = new PayByApp("almmuzdubai@gmail.com");
-        order.setPaymentStrategy(paypal);
+        PaymentStrategy app = new PayByApp("almmuzdubai@gmail.com");
+        order.setPaymentStrategy(app);
         order.processOrder();
 
         PaymentStrategy card = new PayByCreditCard("1234567890123456", "Almat Muzdybay");
